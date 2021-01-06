@@ -7,12 +7,12 @@ import java.util.InputMismatchException;
 import java.util.List;
 
 public class MainLoad {
-    private String path1;
-    private String path2;
-    private String path3;
-    private String path4;
-    private String path5;
-    private String path6;
+    private static String path1;
+    private static String path2;
+    private static String path3;
+    private static String path4;
+    private static String path5;
+    private static String path6;
     private static List<Lecturer> lecturers;
     private static List<Officer> officers;
     private static List<SeasonalStaff> seasonalStaffs;
@@ -43,13 +43,13 @@ public class MainLoad {
             Menu3();
             break;
             case 4:
-            Menu4();
+            // Menu4();
             break;
             case 5:
-            Menu5();
+            // Menu5();
             break;
             case 6:
-            Menu6();
+            // Menu6();
             break;
             default:
                 System.out.println("Invalid entry, please enter again! 🙂");
@@ -83,39 +83,39 @@ public class MainLoad {
                         break;
                     case 2:
                         System.out.println("Fill file path: ");
-                        this.path2 = new Scanner(System.in).nextLine();
-                        if(this.path2.equals("")){
-                            this.path2 = "assignment1/CsvReader/Officer.csv";
+                        path2 = new Scanner(System.in).nextLine();
+                        if(path2.equals("")){
+                            path2 = "assignment1/CsvReader/Officer.csv";
                         }
-                        officers = OfficerCsvReader.readOfficercsv(this.path2);
+                        officers = OfficerCsvReader.readOfficercsv(path2);
                         break;
                     case 3:
                         System.out.println("Fill file path: ");
-                        this.path3 = new Scanner(System.in).nextLine();
-                        if(this.path3.equals("")){
-                            this.path3 = "assignment1/CsvReader/SeasonalStaffs.csv";
+                        path3 = new Scanner(System.in).nextLine();
+                        if(path3.equals("")){
+                            path3 = "assignment1/CsvReader/SeasonalStaffs.csv";
                         }
-                        SeasonalStaffs = SeasonalStaffCsvReader.readSeasonalStaffcsv(this.path3);
+                        seasonalStaffs = SeasonalStaffCsvReader.readSeasonalStaffcsv(path3);
                         break;
                     case 4:
                         System.out.print("Fill file path: ");
-                        this.path4 = new Scanner(System.in).nextLine();
-                        if(this.path4 == "") {
-                            this.path4 = "assignment1/CsvReader/Student.csv";
+                        path4 = new Scanner(System.in).nextLine();
+                        if(path4 == "") {
+                            path4 = "assignment1/CsvReader/Student.csv";
                         }
                         break;
                     case 5:
                         System.out.print("Information of Operation Costs");
-                        this.path5 = new Scanner(System.in).nextLine();
-                        if(this.path5 == "\n") {
-                            this.path5 = "assignment1/CsvReader/Provider.csv";
+                        path5 = new Scanner(System.in).nextLine();
+                        if(path5 == "") {
+                            path5 = "assignment1/CsvReader/Provider.csv";
                         }
                         break;
                     case 6:
                         System.out.print("Information of Transaction");
-                        this.path6 = new Scanner(System.in).nextLine();
-                        if(this.path6 == "\n") {
-                            this.path6 = "assignment1/CsvReader/Transaction.csv";
+                        path6 = new Scanner(System.in).nextLine();
+                        if(path6 == "") {
+                            path6 = "assignment1/CsvReader/Transaction.csv";
                         }
                         break;
                     case 7:
@@ -145,25 +145,25 @@ public class MainLoad {
                     switch(choose) {
                     case 1: 
                         LecturerCsvReader obj = new LecturerCsvReader();
-                        List<Lecturer> list = obj.readLecturercsv(this.path1); //ye?
-                        obj.printData(this.path1);
-                        // LecturerCsvReader(this.path1); Ua cai dong nay la sao? la doc file CSV tu class by ban em bay :))
+                        List<Lecturer> list = obj.readLecturercsv(path1); //ye?
+                        obj.printData(path1);
+                        // LecturerCsvReader(path1); Ua cai dong nay la sao? la doc file CSV tu class by ban em bay :))
                         break;
                     case 2:
-                        OfficerCsvReader(this.path2);
+                        OfficerCsvReader(path2);
                         break;
                     
                     case 3:
-                        SeasonalStaffCsvReader(this.path3);
+                        SeasonalStaffCsvReader(path3);
                         break;
                     case 4:
-                        StudentCsvReader(this.path4);
+                        StudentCsvReader(path4);
                         break;
                     case 5:
-                        ProviderCsvReader(this.path5);
+                        ProviderCsvReader(path5);
                         break;
                     case 6:
-                        TransactionCsvReader(this.path6);
+                        TransactionCsvReader(path6);
                         break;
                     case 7:
                         Menu();
@@ -176,13 +176,13 @@ public class MainLoad {
             
         }
         public static void Menu3() {
-            this.path1 = null;
-            this.path2 = null;
-            this.path3 = null;
-            this.path4 = null;
-            this.path5 = null;
-            this.path6 = null;
-            lecturers = LecturerCsvReader.readLecturercsv(this.path1);
+            path1 = null;
+            path2 = null;
+            path3 = null;
+            path4 = null;
+            path5 = null;
+            path6 = null;
+            lecturers = LecturerCsvReader.readLecturercsv(path1);
             
         }
         public static void main(String[] args){

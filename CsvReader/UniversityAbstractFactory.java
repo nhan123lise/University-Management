@@ -1,11 +1,12 @@
-package assignment1;
+package assignment1.CsvReader;
+import assignment1.*;
 
 import java.util.List;
 
 public interface UniversityAbstractFactory {
   List<Student> createStudents();
-  List<Officer> creatOfficers();
-  List<SeasonalStaff> creaSeasonalStaffs(); 
+  List<Officer> createOfficers();
+  List<SeasonalStaff> createSeasonalStaffs(); 
   List<Lecturer> createLecturers();
   List<Provider> createProviders();
   List<Transaction> createTransactions();

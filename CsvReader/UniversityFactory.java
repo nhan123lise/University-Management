@@ -1,5 +1,7 @@
 package assignment1.CsvReader;
-import java.util.ArrayList;
+import java.util.*;
+import assignment1.*;
+
 public class UniversityFactory implements UniversityAbstractFactory {
     @Override
 	public List<Lecturer> createLecturers() {
@@ -14,8 +16,8 @@ public class UniversityFactory implements UniversityAbstractFactory {
 		return new ArrayList<Transaction>();
 	}
 	@Override
-	public List<Students> createStudents() {
-		return new ArrayList<Students>();
+	public List<Student> createStudents() {
+		return new ArrayList<Student>();
 	}
 
 	@Override
@@ -23,7 +25,7 @@ public class UniversityFactory implements UniversityAbstractFactory {
 		return new ArrayList<SeasonalStaff>();
 	}
 	@Override
-	public List<FulltimeStaff> createFulltimeStaffs() {
+	public List<Officer> createOfficers() {
 		return new ArrayList<FulltimeStaff>();
     }   
     
