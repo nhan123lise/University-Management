@@ -7,7 +7,6 @@ git clone https://github.com/nhan123lise/University-Management assignment1
 Run below cmd
 
 ```bash
-cd ..
 javac assignment1/Account.java
 javac assignment1/JunitTestSuite.java
 javac assignment1/Lecturer.java
