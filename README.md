@@ -1,10 +1,43 @@
 # University-Management
 Project used for Object Oriented Programming Subject at my university
 # Installation and Run
-Create a new folder name "assignment1". From terminal, Cd .. to step out of the folder. From terminal, java assignment1/MainLoad to run the main Menu
+
+git clone https://github.com/nhan123lise/University-Management assignment1
+
+Run below cmd
+
 ```bash
 cd ..
-java assignment1/MainLoad
+javac assignment1/Account.java
+javac assignment1/JunitTestSuite.java
+javac assignment1/Lecturer.java
+javac assignment1/LecturerObsever.java
+javac assignment1/MyAccount.java
+javac assignment1/Obseverable.java
+javac assignment1/Officer.java
+javac assignment1/OfficerObsever.java
+javac assignment1/Payable.java
+javac assignment1/Provider.java
+javac assignment1/SeasonalStaff.java
+javac assignment1/Staff.java
+javac assignment1/Student.java
+javac assignment1/TestUniversitySingleton.java 
+javac assignment1/Transaction.java
+javac assignment1/University.java
+javac assignment1/UniversitySingleton.java
+javac assignment1/UniversityTest.java
+javac assignment1/CsvReader/LecturerCsvReader.java
+javac assignment1/CsvReader/OfficerCsvReader.java
+javac assignment1/CsvReader/ProviderCsvReader.java
+javac assignment1/CsvReader/SeasonalStaffCsvReader.java
+javac assignment1/CsvReader/StudentCsvReader.java
+javac assignment1/CsvReader/TransactionCsvReader.java
+javac assignment1/CsvReader/UniversityAbstractFactory.java
+javac assignment1/CsvReader/UniversityFactory.java
+```
+```bash
+javac assignment1/MainLoad.java
+java assignment1.MainLoad
 ```
 # Main Menu
 ```bash
@@ -24,3 +57,4 @@ From there, choose the function you want to implement by enter number from 1 to 
 Use CSV to store data
 
 Design pattern: Observer pattern, Singleton pattern, Builder pattern
+
